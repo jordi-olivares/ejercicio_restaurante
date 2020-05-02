@@ -1,0 +1,38 @@
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:25px;
+}
+img{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+div div{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 111, 111, 0.4);
+    border: black 1px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uno{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 30%;
+    margin-right: 30%;
+}
